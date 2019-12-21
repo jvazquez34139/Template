@@ -3,6 +3,8 @@
 
  This includes dependencies for gulp automation, express and parsers, template folder routes, and a basic running express app.
 
+ To install `$npm clone https://github.com/jvazquez34139/Template.git foldername`
+
 ## Express App
   #### Includes an `app.js` file. This is the main server file.
 

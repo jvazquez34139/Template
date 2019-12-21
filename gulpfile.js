@@ -1,7 +1,7 @@
 "use strict";
 
 const gulp = require('gulp'),
-  {task, src, dest, series, parallel} = gulp,
+  {task, src, dest, series, parallel,watch} = gulp,
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
   sass = require('gulp-sass'),
