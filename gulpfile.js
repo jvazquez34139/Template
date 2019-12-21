@@ -36,7 +36,6 @@ const compileSass = () => {
     .pipe(sass())
     .pipe(maps.write('./'))
     .pipe(dest('public/css'));
-    // .pipe(browserSync.stream());
 }
 
 const minifyCSS = () => {
@@ -57,17 +56,18 @@ const clean = () => {
 }
 
 const watchCSS = () => {
-  // browserSync.init({
-  //   port:3001,
-  //   proxy: "localhost:3000"
-  //   //run server before attempting to run this proxy
-  // });
   watch(['public/scss/**/*.scss'], series('minifyCSS'))
 }
 
 const watchFiles = () => {
-  watch(['public/scss/**/*.scss'], series('clearCSS','compileSass'));
-  watch(['public/js/**/*.js'], series('clearJS','concatScripts'));
+  browserSync.init({
+    port:3001,
+    proxy: "localhost:3000"
+    //run server before attempting to run this proxy
+  });
+  watch(['public/scss/**/*.scss']).on('change', series('clearCSS','minifyCSS', browserSync.reload));
+  watch(['public/js/**/*.js']).on('change', series('clearJS','concatScripts', browserSync.reload));
+  watch(['views/**/*.pug']).on('change', browserSync.reload);
 }
 
 const build = () => {
