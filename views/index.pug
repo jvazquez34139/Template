@@ -1,4 +1,52 @@
 extends extends/layout.pug
 
 block content
-  h1 hello world!
+  //- .modal
+    //- text content goes.
+    //- .card
+      //- .card-header
+        //- h1 skillDesc>center>h2
+      //- .card-content
+      //- .
+  .meat
+    section
+      .skillDesc
+        .center
+          h2 I Develop Front-End Websites.
+      .techicons
+        img(src='./images/about/html5.png', alt='html5', height='150', width='150')
+        img(src='./images/about/css3.png', alt='css3', height='150', width='150')
+        img(src='./images/about/js.png', alt='js', height='150', width='150')
+        img(src='./images/about/jquery.png', alt='jquery', height='150', width='150')  
+      .textContent
+        p Using HTML5 as the backbone for website structures I construct expressive websites styled with CSS compiled from SASS. I deliver an interactive experience with dynamic page features such as links, forms and seamless http requests via ajax with the Javascript and the latest ES6 features.
+        p More on my Javascript skills. I'm quite crafty when it comes to OOP with Javascripts Classes. Handling DOM elements with ease using jquery as well as basic javascript.
+    section
+      .skillDesc
+        .center
+          h2 I Work on the Back-End with the Servers.
+      .techicons
+        img(src='./images/about/json.png', alt='json', height='150', width='150')  
+        img(src='./images/about/node.png', alt='node', height='150', width='150')
+        img(src='./images/about/express.png', alt='express', height='90', width='250')
+        img(src='./images/about/mongo.png', alt='mongo', height='90', width='300')
+        
+          
+      .textContent
+        p With express.js I can make an node.js server in no time with the pug.js templating engine for dynamic development. By default I run helmet.js in my middleware to avoid any easily avoidable cyber threats such as malware injections. I'm able to render full html pages to specific routes on my websites using the express router.
+        p Im also capable of making basic content scrapers and use api's with http requests to collect, filter, or map data.
+    section
+      .skillDesc
+        .center
+          h2 Other Tools I Use.
+      .techicons
+        img(src='./images/about/sass.png', alt='json', height='150', width='150')  
+        img(src='./images/about/gulp.png', alt='node', height='150', width='150')
+        img(src='./images/about/pug.png', alt='express', height='100', width='250')
+        img(src='./images/about/mongo.png', alt='mongo', height='120', width='300')
+      .textContent
+        p - Server and front- enddevelopment and maintanace is no sweat when i use gulp.js's custimizable automation tasks.
+        p - Github and git for version control
+        p - passport.js
+        p - mongoDB for the database 
+  include about.pug

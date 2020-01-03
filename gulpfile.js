@@ -13,9 +13,9 @@ const gulp = require('gulp'),
 
 const concatScripts = () => {
   return src([
-      'public/js/script1.js',
-      'public/js/script2.js',
-      'public/js/script3.js'
+      'public/js/contentResize.js',
+      'public/js/indexTabs.js',
+      // 'public/js/script3.js'
     ])
     .pipe(maps.init())
     .pipe(concat('app.js'))

@@ -1,5 +1,9 @@
+doctype html
 html
-  include head.pug
+  include includes/head.pug
   body
-    block content
-    include footer.pug
+    .container
+      include includes/header.pug
+      .content 
+        block content
+      include includes/footer.pug

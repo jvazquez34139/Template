@@ -1,0 +1,54 @@
+header{
+  padding-left: 50px;
+  padding-right: 50px;
+  color: $accent-color;
+  background: $primary-color;
+  min-height: 300px;
+  display: flex;
+}
+.left-header{
+  padding-top: 25px;
+  width: 75%;
+  font-family: tahoma;
+  // border:black 1px solid;
+  h1{
+    line-height: 3rem;
+    font-size: 3em;
+    margin-bottom: 200px;
+  }
+}
+.right-header{
+  // background-image: url('../images/about/me.jpg');
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  border-radius: 50%;
+  // border:black 1px solid;
+  margin: auto;
+  img{
+    background-image: url('../images/about/me.jpg');
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    // margin: auto;
+  }
+  .det{
+    font-weight: bold;
+  }
+  .skillTag{
+    border-radius: 5px;
+    padding: 1px;
+    margin: 0 0 2px 5px;
+
+    background: #077;
+    // color: $text-color;
+  }
+  .profile{
+
+  }
+}
+// .profile{
+//   float: right;
+// }

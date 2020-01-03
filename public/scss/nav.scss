@@ -1,0 +1,16 @@
+nav{
+  a{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 50px;
+    padding-right: 1px;
+    color: $accent-color;
+    &:hover{
+      background: $accent-color;
+      color: $primary-color;
+    }
+    &:active{
+      color: limegreen;
+    }
+  }
+}
