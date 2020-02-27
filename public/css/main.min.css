@@ -1,1 +1,1 @@
-*{box-sizing:border-box;margin:0;padding:0}body{background:red;color:#fff}.main{display:flex;justify-content:center;align-items:center;width:40%;margin:0 auto}.main .main__paragraph1,.main .main__paragraph2{font-weight:700}.main .main__paragraph1:hover,.main .main__paragraph2:hover{color:pink}.main .main__paragraph2:hover{color:#ff652f}@media (max-width:800px){.main{flex-direction:column}}.light{background:#fff;color:#000}
+*{box-sizing:border-box;margin:0;padding:0;text-decoration:none;list-style:none}html{background:#666;font-size:16px}
