@@ -1,4 +1,11 @@
 extends extends/layout.pug
 
 block content
-  //- h1 hello
+  form
+    h2 Video Title
+    input(type="text", id="name", name="title", placeholder="Making an Iron Golem").row
+    h2 Description
+    input(type="text", id="description", name="description", placeholder="This is a minecraft video on how to make an iron golem.").row
+    button(type="submit", name="submit").row 
+      .col
+        h3 Done

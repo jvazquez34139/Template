@@ -1,0 +1,16 @@
+nav{
+  margin-top: 10px;
+  margin-left: auto;
+  ul li{
+    margin-left: 1.25rem;
+    display: inline-block;
+    &:last-child{
+      margin-right: 1.25rem;
+    }
+    a{
+      font-size: 1.25rem;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+}

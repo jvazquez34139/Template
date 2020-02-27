@@ -1,0 +1,31 @@
+form{
+  border-radius: 10px;
+  width: 50%;
+  border: solid $primary-color 1px;
+  height: 200px;
+  margin: 20px auto auto auto;
+  padding: 20px;
+  box-shadow: $primary-color 2px 2px 5px;
+  color: $accent-color;
+  input{
+    // margin-left: 20px;
+    height: 30px;
+    font-size: 1.5rem;
+  }
+  button{
+    background: $primary-color;
+    height: 40px;
+    padding: 5px 0 5px 0;
+    // margin: 0 auto 0 auto;
+    // text-align: center;
+    // align-items: center;
+    // align-content: center;
+    // align-content: space-around;
+    border: 1px $primary-color solid;
+    font-size: 1.25rem;
+    color: #fff;
+    .col {
+      margin: 0 auto 0 auto;
+    }
+  }
+}
