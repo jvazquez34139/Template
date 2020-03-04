@@ -2,26 +2,35 @@ form{
   border-radius: 10px;
   width: 50%;
   border: solid $primary-color 1px;
-  height: 200px;
+  min-height: 300px;
   margin: 20px auto auto auto;
   padding: 20px;
   box-shadow: $primary-color 2px 2px 5px;
   color: $accent-color;
+  input, textarea, button{
+    outline: none;
+
+  }
   input{
     // margin-left: 20px;
-    height: 30px;
+    height: 40px;
     font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px 0 20px 0;
+  }
+  textarea{
+    height: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10 0;
   }
   button{
     background: $primary-color;
     height: 40px;
     padding: 5px 0 5px 0;
-    // margin: 0 auto 0 auto;
-    // text-align: center;
-    // align-items: center;
-    // align-content: center;
-    // align-content: space-around;
     border: 1px $primary-color solid;
+    border-radius: 10px;
     font-size: 1.25rem;
     color: #fff;
     .col {

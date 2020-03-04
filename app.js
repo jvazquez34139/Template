@@ -12,8 +12,13 @@ app.use(express.urlencoded({extended: false}));
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'))
 
-const router = require('./routes/index');
-app.use('/', router);
+const index = require('./routes/index');
+app.use('/', index);
+const regilog = require('./routes/regilog');
+app.use('/', regilog);
+const ideas = require('./routes/ideas');
+app.use('/', ideas);
+
 
 app.listen(3000, () => {
   console.log('listening on port 3000');

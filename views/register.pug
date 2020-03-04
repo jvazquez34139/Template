@@ -1,0 +1,17 @@
+extends extends/layout.pug
+
+block content
+  h2.title Register Here!
+  form
+    h2 Username
+    input(type="text", id="username", name="username").row
+    h2 Email
+    input(type="email", id="email", name="email").row
+    h2 Password
+    input(type="password", id="Password", name="password").row
+    h2 Confirm Password
+    input(type="password", id="confirm-Password", name="confirm-password").row
+    button(type="submit", name="submit").row 
+      .col
+        h3 Register
+  

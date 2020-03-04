@@ -1,6 +1,8 @@
 html
   include head.pug
   body
-    include ./includes/header.pug
-    block content
-    include ./includes/footer.pug
+    .big_wrapper
+      include ./includes/header.pug
+      .content_wrapper
+        block content
+      include ./includes/footer.pug
