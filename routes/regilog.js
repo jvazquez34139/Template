@@ -47,7 +47,6 @@ router.get('/login', (req, res, next) => {
 router.post('/login', (req, res, next) => {
   const {username, password} = req.body;
   const db = dbcon.opendb();
-  // console.log(res.locals.username);
   db.on('error', console.error.bind(console, 'connection error:'));
   db.once('open', () => {
     const query = VidJotUser.find({username: username}, function
@@ -69,7 +68,6 @@ router.post('/login', (req, res, next) => {
 });
 
 router.get('/logout', (req, res, next) => {
-  //toggle the nav.pug to display login/logout
   res.clearCookie('username');
   req.app.locals.username = "";
   res.redirect('/login');

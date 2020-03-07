@@ -11,6 +11,15 @@ app.use(express.static('public'));
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
+app.use('*', (req, res, next) => {
+  //incase server shuts off this prevents the cookies and app.locals from
+  //being out of sync
+  if(req.cookies.username){
+    req.app.locals.username = req.cookies.username;
+  }else{
+  }
+  next();
+})
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'))

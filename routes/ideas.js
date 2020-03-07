@@ -1,6 +1,8 @@
 const express = require('express');
 let router = express.Router();
 const dbcon = require('../dbcon.js');
+
+//get all ideas onto the front-end for the jquery to reorganize
 router.get('/ideas', (req, res, next) => {
   const db = dbcon.opendb();
   db.on('error', console.error.bind(console, 'connection error:'));
@@ -8,12 +10,9 @@ router.get('/ideas', (req, res, next) => {
     const query = VidJot.find({user: req.cookies.username}, function
     (err, vidJots){
       if(err) return handleError(err);
-      // console.log(vidJots.length);
       res.render("ideas", {ideaArray: vidJots});
     })
   });
-  // const idea = {title: "rare Diamonds", desc: "hello this is my video on minecrafting for rarer diamonds"};
-  // console.log(req.cookies.title);
 });
 
 //use post method to read write to database
