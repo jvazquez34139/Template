@@ -1,7 +1,7 @@
 extends extends/layout.pug
 
 block content
-  form
+  form(method="post", action="/ideapost")
     h2 Video Title
     input(type="text", id="name", name="title", placeholder="Making an Iron Golem").row
     h2 Description

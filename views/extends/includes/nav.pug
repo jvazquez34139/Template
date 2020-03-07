@@ -1,9 +1,12 @@
 nav
   ul.row
-    li
-      a(href="/register").col Register  
-    li
-      a(href="/login").col Login
+    if locals.username
+      li
+        a(href="/logout").col logout
+    else 
+      
+      li
+        a(href="/login").col login
     li
       a(href="/ideas").col Ideas
     

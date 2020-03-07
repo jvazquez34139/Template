@@ -52,7 +52,6 @@ nav {
   margin: 0 5%; }
 
 .big_wrapper .title {
-  width: 50%;
   margin: 10px auto; }
 
 .big_wrapper .search {
@@ -61,6 +60,9 @@ nav {
     margin-top: 5px; }
   .big_wrapper .search input {
     margin-left: auto; }
+
+.big_wrapper h5 > a {
+  color: purple; }
 
 .idea-container .card {
   width: 25%;
@@ -93,6 +95,7 @@ form {
   min-height: 300px;
   margin: 20px auto auto auto;
   padding: 20px;
+  padding-bottom: 40px;
   box-shadow: #5c5 2px 2px 5px;
   color: #ff652f; }
   form input, form textarea, form button {
@@ -118,6 +121,9 @@ form {
     color: #fff; }
     form button .col {
       margin: 0 auto 0 auto; }
+
+.error {
+  color: #f00; }
 
 footer {
   margin-top: 20px; }

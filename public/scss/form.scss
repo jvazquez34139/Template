@@ -5,6 +5,7 @@ form{
   min-height: 300px;
   margin: 20px auto auto auto;
   padding: 20px;
+  padding-bottom: 40px;
   box-shadow: $primary-color 2px 2px 5px;
   color: $accent-color;
   input, textarea, button{
@@ -37,4 +38,7 @@ form{
       margin: 0 auto 0 auto;
     }
   }
+}
+.error{
+  color: #f00;
 }

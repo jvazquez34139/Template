@@ -6,6 +6,11 @@ block content
     button.col
       h3 Search
   .idea-container.row
+    each val, index in ideaArray
+      .card.col
+        .title #{val.title}
+        .desc #{val.description}
+  //- modifie display with jquery
   //-   .card.col
   //-     .title Hello Burger
   //-     .desc A talking burger says hello.
@@ -25,5 +30,5 @@ block content
   //-   .card.col
   //-     .title Hello Burger
   //-     .desc A talking burger says hello.
-  
+  //- 
   
