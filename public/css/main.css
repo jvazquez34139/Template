@@ -82,6 +82,14 @@ nav {
     font-weight: bold;
     text-align: center;
     color: orangered; }
+    .idea-container .card .title .remove {
+      background: #fff;
+      height: 50px;
+      width: 50px;
+      border-radius: 10px;
+      color: black;
+      float: right;
+      line-height: 1.5rem; }
   .idea-container .card .desc {
     margin: 5px;
     border-radius: 5px;

@@ -8,7 +8,10 @@ block content
   .idea-container.row
     each val, index in ideaArray
       .card.col
-        .title #{val.title}
+        .title 
+          a(href="/delete"+val.id) 
+            .remove X
+          h2 #{val.title}
         .desc #{val.description}
   //- modifie display with jquery
   //- get local offline version of jquery minified

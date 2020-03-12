@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
+const db = require('./config/database');
 
 //structuring ideas
 const ideaSchema = new mongoose.Schema({
+  ideaIndex: Number,
   user: String,
   title: String,
-  description: String
 });
 
 //structuring users
@@ -19,7 +20,7 @@ const opendb = () => {
   VidJot = mongoose.model('VideoIdea', ideaSchema),
   VidJotUser = mongoose.model('Jotter', userSchema)
   //connect to database
-  mongoose.connect('mongodb://localhost/test', {useNewUrlParser: true,
+  mongoose.connect(db.mongoURI, {useNewUrlParser: true,
   useUnifiedTopology: true});
   return mongoose.connection;
 }

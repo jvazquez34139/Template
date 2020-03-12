@@ -25,7 +25,7 @@ router.post('/register', (req, res, next) => {
             const newUser = new VidJotUser({
               email: email,
               username: username,
-              password: password
+              password: password,
             });
             newUser.save((err, newUser) => {
               if(err) return console.error(err);

@@ -2,6 +2,7 @@ const contentWrapper = $(".content_wrapper");
 const ideaContainer = $(".idea-container").hide();
 const ideaContainers = [];
 const cards = $(".card");
+const idIndex = $(".idIndex");
 
 //rearanging the cards
 let rowNum = 0;
@@ -14,5 +15,7 @@ cards.each((index, card) => {
     }
     ideaContainers[rowNum].append(cards[index]);
 });
+//=============================================================================
 
-//giving them delete and edit buttons
+
+//add search engine functionality

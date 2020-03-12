@@ -44,6 +44,15 @@
       font-weight: bold;
       text-align: center;
       color: orangered;
+      .remove{
+        background: #fff;
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+        color:black;
+        float: right;
+        line-height: 1.5rem;
+      }
     }
     .desc{
       margin: 5px;

@@ -25,19 +25,37 @@ router.post('/ideapost', (req, res, next) => {
     const db = dbcon.opendb();
     db.on('error', console.error.bind(console, 'connection error:'));
     db.once('open', () => {
-      const newIdea = new VidJot({
-        user: username,
-        title: title,
-        description: description
-      });
-      newIdea.save((err, newIdea) => {
-        if(err) return console.error(err);
-        console.log("New idea successfully saved.");
-        res.redirect('ideas');
+      const query = VidJotUser.findOne({username: username}, function
+      (err, vidJotUser){
+        if(err) return handleError(err);
+        const newIdea = new VidJot({
+          user: username,
+          title: title,
+          description: description
+        });
+        newIdea.save((err, newIdea) => {
+          if(err) return console.error(err);
+          console.log("New idea successfully saved");
+          res.redirect('ideas');
+        });
       });
     });
   }
 });
 
+router.get('/delete:id', (req, res, next) => {
+  const db = dbcon.opendb();
+  const {username} = req.cookies;
+  const {id} = req.params;
+  db.on('error', console.error.bind(console, 'connection error:'));
+  db.once('open', () => {
+    const query = VidJot.deleteOne({_id: id}, function
+    (err, vidJots){
+      if(err) return handleError(err);
+
+      res.redirect("/ideas");
+    })
+  });
+});
 
 module.exports = router;
