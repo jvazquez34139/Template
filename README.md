@@ -1,7 +1,7 @@
 # Template
  #### Basic node.js website packet
 
- This includes dependencies for gulp automation, express and parsers, template folder routes, and a basic running express app.
+ This includes dependencies for gulp automation, express and parsers, template folder routes, and a basic running express app. But it's very basic boilerplate and more easily customizable.
 
  To install `$git clone https://github.com/jvazquez34139/Template.git foldername`
 '$npm install'
